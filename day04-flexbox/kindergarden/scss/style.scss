@@ -1,0 +1,172 @@
+// Variables
+$b1: #FFFFFF;
+$b2: #FFE964;
+$b3: #FF523D;
+$b4: #223C88;
+$text: #000000;
+// Base style
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  
+}
+a {
+  text-decoration: none;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+//================ NAVIGATION
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0 0 0;
+    width: 100%;
+    @media (min-width: 720px) {
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 1rem;
+    }
+    li {
+      padding: 1rem;
+      a {
+        color: $text;
+      }
+    }
+  }
+}
+//===========Header 
+header {
+  display: flex;
+  width: 100%;
+  height: 100%; 
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../graphics/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 300px; 
+  max-height: 100%;
+  h1 {
+    color: white;
+    width: 30%;
+    text-align: left;
+    &::first-letter {
+      color: yellow;
+    }
+  }
+}
+.border {
+  border-bottom: 1px solid white;
+}
+//=====================Main
+//First Section
+main {
+  display: flex;
+  flex-direction: column;
+}
+.mission {
+  display: flex;
+  justify-content: center;
+  
+  width: 100%;
+  padding: 5rem;
+  background-color: $b2;
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    h1 {
+      padding: 0 0 1rem 0;
+       font-weight: bold;
+    }
+  }
+}
+//Second Section
+.about {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5rem;
+  h1 {
+    padding: 0 0 1rem 0;
+     font-weight: bold;
+  }
+}
+// Third Section
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $b3;
+  color: #FFFFFF;
+  h1 {
+    align-self: flex-start;
+    padding: 1rem;
+  }
+  .team-wrap {
+    display: flex;
+    flex-direction: column;
+  
+    .member {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+  }
+}
+//responsive team
+.res-wrap {
+  @media (min-width: 720px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+// Footer
+footer {
+  width: 100%;
+  background-color: $b4;
+  color: white;
+  padding: 3rem;
+  h2 {
+    padding: 1rem;
+  
+}
+  .adress {
+    padding: 1rem;
+    h4 {
+      padding:  0.4rem 0;
+    }
+  }
+ .phone {
+  padding: 1rem;
+  h4 {
+    padding:  0.4rem 0;
+  }
+ }
+}
+

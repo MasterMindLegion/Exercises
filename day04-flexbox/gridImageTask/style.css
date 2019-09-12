@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+}
+
+body {
+  background-image: url("grid.png");
+}
+.mybox {
+  width: 15rem;
+  height: 20rem;
+  border: 2.5rem solid black;
+  padding: 3rem;
+  margin: 1rem;
+  background-color: cadetblue;
+}

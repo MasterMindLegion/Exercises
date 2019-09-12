@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.img {
+  width: 100%;
+  height: 100%; }
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0 0 0;
+    width: 100%; }
+    @media (min-width: 720px) {
+      nav ul {
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 1rem; } }
+    nav ul li {
+      padding: 1rem; }
+      nav ul li a {
+        color: #000000; }
+
+header {
+  display: flex;
+  width: 100%;
+  height: 100%; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../graphics/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 300px;
+  max-height: 100%; }
+  .header h1 {
+    color: white;
+    width: 30%;
+    text-align: left; }
+    .header h1::first-letter {
+      color: yellow; }
+
+.border {
+  border-bottom: 1px solid white; }
+
+main {
+  display: flex;
+  flex-direction: column; }
+
+.mission {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5rem;
+  background-color: #FFE964; }
+  .mission .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%; }
+    .mission .wrap h1 {
+      padding: 0 0 1rem 0;
+      font-weight: bold; }
+
+.about {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5rem; }
+  .about h1 {
+    padding: 0 0 1rem 0;
+    font-weight: bold; }
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FF523D;
+  color: #FFFFFF; }
+  .team h1 {
+    align-self: flex-start;
+    padding: 1rem; }
+  .team .team-wrap {
+    display: flex;
+    flex-direction: column; }
+    .team .team-wrap .member {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem; }
+
+@media (min-width: 720px) {
+  .res-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; } }
+
+footer {
+  width: 100%;
+  background-color: #223C88;
+  color: white;
+  padding: 3rem; }
+  footer h2 {
+    padding: 1rem; }
+  footer .adress {
+    padding: 1rem; }
+    footer .adress h4 {
+      padding: 0.4rem 0; }
+  footer .phone {
+    padding: 1rem; }
+    footer .phone h4 {
+      padding: 0.4rem 0; }
