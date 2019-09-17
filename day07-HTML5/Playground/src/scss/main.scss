@@ -1,0 +1,42 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/got-bg(1).jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+
+  .north {
+    width: 100%;
+    align-self: flex-end;
+    h4 {
+      padding: 1rem;
+    }
+   
+  }
+
+  .game {
+    width: 100%;
+    align-self: flex-start;
+    h1 {
+      text-align: right;
+      padding: 1rem;
+    }
+    
+ 
+  }
+}
+// .overlay {
+//   display: flex;
+//   background-color: rgba(0, 0, 0, 0.7);
+//   background-size: cover;
+//   width: 100%;
+//   height: 100%;
+// }
+
